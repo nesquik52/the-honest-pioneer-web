@@ -223,10 +223,10 @@ export default function App() {
       <motion.section id="socials" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8 }} className="relative py-16 md:py-24 flex flex-col items-center justify-center px-4">
         <h2 className="text-4xl md:text-7xl mb-10 md:mb-16 text-[#d92b2b] text-center uppercase">{t('findUs')}</h2>
         <div className="flex flex-wrap justify-center gap-4 md:gap-12">
-          <SocialIcon href="https://t.me/yourgame" src="/icons/telegram.png" />
-          <SocialIcon href="https://discord.gg/yourgame" src="/icons/discord.png" />
-          <SocialIcon href="https://x.com/yourgame" src="/icons/x.png" />
-          <SocialIcon href="https://tiktok.com/@yourgame" src="/icons/tiktok.png" />
+          <SocialIcon href="https://t.me/TheHonestPioneer" src="/icons/telegram.png" />
+          <SocialIcon href="https://discord.gg/KmUzMmNvr" src="/icons/discord.png" />
+          <SocialIcon href="https://x.com/HonestPioneer" src="/icons/x.png" />
+          <SocialIcon href="https://www.tiktok.com/@thehonestpioneer" src="/icons/tiktok.png" />
         </div>
       </motion.section>
 
