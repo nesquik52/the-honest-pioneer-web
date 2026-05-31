@@ -1,16 +1,53 @@
-# React + Vite
+# 🏕️ Честное Пионерское | Промо-сайт игры
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-Currently, two official plugins are available:
+Официальный промо-сайт для кооперативного социального stealth-экшена **«Честное пионерское»**. 
+Игра разрабатывается на базе Unreal Engine 5 в рамках программы «Стартап как диплом». Игрокам предстоит объединить усилия (до 4 человек), чтобы тайно помогать жителям советской деревни 1940-х годов, выполняя бытовые квесты.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Сайт представляет собой интерактивный лендинг для презентации проекта, демонстрации трейлера, скриншотов геймплея и перенаправления пользователей на страницу игры в Steam.
 
-## React Compiler
+## ✨ Ключевые особенности сайта
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Интерактивный UI:** Анимированные секции с использованием `Framer Motion`. Уникальная механика "взлома" (раскола) карточек в истории создания.
+* **Мультиязычность:** Полная поддержка русского и английского языков (через `i18next`).
+* **Кастомный медиа-плеер:** Встроенный лайтбокс для кинематографичного просмотра трейлера и скриншотов с эффектом размытия фона (backdrop-blur).
+* **Адаптивность:** Полная поддержка мобильных устройств с удобным бургер-меню и оптимизированными шрифтами.
+* **Стилизация:** Кастомные курсоры, уникальный ретро-шрифт (Sporefunk) и цветовая палитра, передающая атмосферу игры.
 
-## Expanding the ESLint configuration
+## 🛠️ Стек технологий
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (JSX)
+* **Сборщик:** Vite
+* **Стилизация:** Tailwind CSS
+* **Анимации:** Framer Motion
+* **Локализация:** `react-i18next` / `i18next-browser-languagedetector`
+* **Иконки:** Lucide React
+
+## 👥 Команда проекта
+
+Основа команды — 4 программиста, каждый из которых отвечает за свою часть проекта для итоговой защиты ВКР. 
+Значительную помощь проекту в создании красивой визуальной и звуковой атмосферы также оказывали дипломированные дизайнер и музыкант.
+
+## 📂 Структура проекта
+
+```text
+📦 honest-pioneer-promo
+├── 📂 public/              # Статические и медиа файлы
+│   ├── 📂 fonts/           # Кастомные шрифты (Sporefunk)
+│   ├── 📂 icons/           # Иконки социальных сетей
+│   ├── 📂 screenshots/     # Игровые скриншоты для лайтбокса
+│   ├── 📄 gameplay-bg.mp4  # Фоновое видео главного экрана
+│   ├── 📄 trailer.mp4      # Основной трейлер игры
+│   └── 📄 poster.jpg       # Обложка для превью трейлера
+├── 📂 src/                 # Исходный код проекта
+│   ├── 📄 App.jsx          # Главный компонент и логика приложения
+│   ├── 📄 i18n.js          # Конфигурация локализации (RU/EN)
+│   ├── 📄 index.css        # Глобальные стили и настройки Tailwind
+│   └── 📄 main.jsx         # Точка входа React-приложения
+├── 📄 index.html           # Главный HTML-шаблон
+├── 📄 tailwind.config.js   # Конфигурация Tailwind CSS
+└── 📄 package.json         # Зависимости и скрипты проекта
